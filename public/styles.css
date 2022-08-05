@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    color:white;    
+    background-color: #e5e5e5;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    min-height:100vh;
+}
+.container{
+    width:550px;
+    /* margin:0 auto; */
+    box-shadow: 1px 1px 10px black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 91px;
+    padding:31px 26px;
+    background-color: #21222A;
+}
+.logo {
+    width: 20px;
+}
+h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    color: #61DAFB;
+    margin-left: 0;
+    margin-right:auto;
+}
+.subText {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #DEEBF8;
+}
+.main {
+    width:100%;
+    padding:57px 26px;
+    background-color: #282D35;
+    /* background-image: url("./react-icon-large.png"); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:10em;
+}
+.main li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+.main li::marker {
+    /* content: "\2022"; */
+    color: #61DAFB;
+    font-size: 3rem;
+}
+h2 {
+    margin-top:0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.06px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+}
+
+@media (max-width:700px) {
+    .container {
+        width:90%;
+    }
+}
